@@ -35,15 +35,6 @@ async function main() {
   const inputStream = process.stdin;
   inputStream.setEncoding("utf-8");
 
-  const inputStreamTimeout = setTimeout(() => {
-    console.error("Unable to read from stdin");
-    process.exit(1);
-  }, 3000);
-
-  inputStream.once("data", () => {
-    clearTimeout(inputStreamTimeout);
-  });
-
   let tsErrorsRawInputString = "";
 
   for await (const chunk of inputStream) {
