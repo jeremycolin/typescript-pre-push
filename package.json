@@ -1,6 +1,6 @@
 {
   "name": "typescript-pre-push",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Filter your TypeScript errors to changed files only.",
   "keywords": [
     "typescript",
